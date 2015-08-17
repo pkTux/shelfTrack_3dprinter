@@ -61,21 +61,31 @@ translate([-15,16,0])
 rotate([0,0,150])
 cube([40,2.7,30],center=true);
 // top holes
-
     translate([-15,45,-8])  
   rotate([90,0,150]) 
     cylinder(d=5, h=60, center=true);
-      translate([-15,10,-8])rotate([90,0,150]) cylinder(d=5, h=60, center=true);
-      translate([-15,10,8])rotate([90,0,150]) cylinder(d=5, h=60, center=true);
+      translate([-15,5,-8])rotate([90,0,150]) cylinder(d=5, h=60, center=true);
+      translate([-15,5,8])rotate([90,0,150]) cylinder(d=5, h=60, center=true);
      translate([-15,45,8])rotate([90,0,150]) cylinder(d=5, h=60, center=true);
 
 };
+difference (){
 translate([-15,-16,0])
 rotate([0,0,-150])
 cube([40,2.7,30],center=true);
+        translate([-15,-45,-8])  
+  rotate([90,0,-150]) 
+    cylinder(d=5, h=60, center=true);
+      translate([-15,-5,-8])rotate([90,0,-150]) cylinder(d=5, h=60, center=true);
+      translate([-15,-5,8])rotate([90,0,-150]) cylinder(d=5, h=60, center=true);
+     translate([-15,-45,8])rotate([90,0,-150]) cylinder(d=5, h=60, center=true);
+    
+};
 //cross braceing
-    translate([-20,0,0])
-cube([2.7,38,30],center=true);
+    translate([-20,0,0])difference (){
+cube([2.7,38,30],center=true);rotate([0,90,0])
+      cylinder(d=10,h=10,center=true);  
+    };
   //plate for 5 bolt holes
 // rotate([0,gx,0])
 //difference () {
