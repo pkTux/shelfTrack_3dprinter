@@ -56,8 +56,8 @@ difference ()
     translate([-10,0,-8])       cylinder(d=5, h=60, center=true);
       translate([-10,22.5,-8])cylinder(d=5, h=60, center=true);
       translate([-10,-22.5,-8])    cylinder(d=5, h=60, center=true);
-        translate([-10,10,-8])    cylinder(d=5, h=60, center=true);
-      translate([-10,-10,-8])    cylinder(d=5, h=60, center=true);
+        translate([-10,7.5,-8])    cylinder(d=5, h=60, center=true);
+      translate([-10,-7.5,-8])    cylinder(d=5, h=60, center=true);
    //notch to keep opening for C-channel
     translate([6,0,-15]) cube([5,25,15],center=true);
 }

@@ -35,16 +35,15 @@ difference()
  //  original 5 holes
     translate([dy,dy,0]/2) cylinder(d=5, h=50,  center=true);
     translate([dy,-dy,0]/2) cylinder(d=5, h=50,  center=true);
-  translate([dy,-dx,0]/2) cylinder(d=5, h=50,  center=true);
-     translate([dy,dx,0]/2) cylinder(d=5, h=50,  center=true);
-  translate([-dy,dx,0]/2) cylinder(d=5, h=50,  center=true);  
-  translate([-dy,-dx,0]/2) cylinder(d=5, h=50,  center=true);  
+  translate([dy,-cx,0]/2) cylinder(d=5, h=50,  center=true);
+     translate([dy,cx,0]/2) cylinder(d=5, h=50,  center=true);
+  translate([-dy,cx,0]/2) cylinder(d=5, h=50,  center=true);  
+  translate([-dy,-cx,0]/2) cylinder(d=5, h=50,  center=true);  
   translate([-dy,dy,0]/2) cylinder(d=5, h=50,  center=true);
     translate([-dy,-dy,0]/2) cylinder(d=5, h=50,  center=true);  
-      translate([dy*.5,0,-8]) cylinder(d=5, h=60, center=true);
-        translate([-dy*.5,0,-8]) cylinder(d=5, h=60, center=true);
-   
-    
+      translate([dy*.5,0,0]) cylinder(d=5, h=60, center=true);
+     translate([-dy*.5,0,0]) cylinder(d=5, h=60, center=true);   
+//countersink
  translate([cx,cy,0]/2)  cylinder(d1=16, d2=8, h=7,  center=true);
  translate([-cx,cy,0]/2) cylinder(d1=16, d2=8, h=7, center=true);
     translate([cx,-cy,0]/2) cylinder(d1=16, d2=8, h=7,  center=true);
