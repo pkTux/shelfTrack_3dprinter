@@ -54,10 +54,10 @@ module top_block()
             translate([-c_screw_hole_x,-c_screw_hole_y,0]/2) 5mm_screw_way();
 
         // Machine Screw Bevels ### Need to tinker with this to get bevel right depth and width
-            translate([c_screw_hole_x,c_screw_hole_y,0]/2) 5mm_screw_bevel();
-            translate([-c_screw_hole_x,c_screw_hole_y,0]/2) 5mm_screw_bevel();
-            translate([c_screw_hole_x,-c_screw_hole_y,0]/2) 5mm_screw_bevel();
-            translate([-c_screw_hole_x,-c_screw_hole_y,0]/2) 5mm_screw_bevel();
+            translate([c_screw_hole_x,c_screw_hole_y,2]/2) 5mm_screw_bevel();
+            translate([-c_screw_hole_x,c_screw_hole_y,2]/2) 5mm_screw_bevel();
+            translate([c_screw_hole_x,-c_screw_hole_y,2]/2) 5mm_screw_bevel();
+            translate([-c_screw_hole_x,-c_screw_hole_y,2]/2) 5mm_screw_bevel();
         }
     }
     

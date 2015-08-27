@@ -64,10 +64,10 @@ module top_block()
 //            translate([-d_screw_hole_y,-d_screw_hole_x,0]/2) 5mm_screw_way();  
             
         // Machine Screw Bevels ### Need to tinker with this to get bevel right depth and width
-            translate([c_screw_hole_x,c_screw_hole_y,0]/2) 5mm_screw_bevel();
-            translate([-c_screw_hole_x,c_screw_hole_y,0]/2) 5mm_screw_bevel();
-            translate([c_screw_hole_x,-c_screw_hole_y,0]/2) 5mm_screw_bevel();
-            translate([-c_screw_hole_x,-c_screw_hole_y,0]/2) 5mm_screw_bevel();
+            translate([c_screw_hole_x,c_screw_hole_y,2]/2) 5mm_screw_bevel();
+            translate([-c_screw_hole_x,c_screw_hole_y,2]/2) 5mm_screw_bevel();
+            translate([c_screw_hole_x,-c_screw_hole_y,2]/2) 5mm_screw_bevel();
+            translate([-c_screw_hole_x,-c_screw_hole_y,2]/2) 5mm_screw_bevel();
 
         // Zip Tie Notches    
         //    translate([0,-c_screw_hole_y/2,11.5-10]) cube([18,3,4],center=true);
